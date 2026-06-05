@@ -159,3 +159,48 @@ input:focus, textarea:focus {
     z-index: -1;
     opacity: 0.5;
 }
+
+/* --- Modo Claro --- */
+[data-theme="light"] {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --card-bg: #f9f9f9;
+}
+
+[data-theme="light"] header {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #ddd;
+}
+
+[data-theme="light"] .nav-links a {
+    color: #000000;
+}
+
+[data-theme="light"] .nav-links a:hover {
+    color: var(--accent-color);
+}
+
+[data-theme="light"] .card {
+    border: 1px solid #ddd;
+}
+
+[data-theme="light"] input, [data-theme="light"] textarea {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    color: #000000;
+}
+
+/* Botón de Tema */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 20px;
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.2);
+}
