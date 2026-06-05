@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVilla - ¿Quiénes somos?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">EcoVilla</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ods.html">Objetivo ODS</a></li>
+                <li><a href="contenido.html">Contenido</a></li>
+                <li><a href="nosotros.html" style="color: var(--accent-color);">¿Quiénes somos?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Sobre el Proyecto</h2>
+        
+        <div style="margin: 30px 0; padding: 20px; background-color: var(--card-bg); border-left: 4px solid var(--accent-color);">
+            <h3 style="color: var(--accent-color);">Misión</h3>
+            <p>Educar e inspirar a la comunidad del Colegio Villa Rica para adoptar hábitos de consumo responsable, demostrando que la tecnología y el diseño pueden ser herramientas clave para el desarrollo sustentable.</p>
+            
+            <h3 style="color: var(--accent-color); margin-top: 20px;">Visión</h3>
+            <p>Convertirnos en un modelo estudiantil a seguir, donde la gestión de residuos y el consumo ecológico sean la norma y no la excepción dentro de nuestro plantel.</p>
+        </div>
+
+        <h3>Sobre el Autor</h3>
+        <p>Desarrollado por <strong>Luis Alejandro Lorenzo Gutierrez</strong>, como parte de una iniciativa académica para integrar principios de diseño web con responsabilidad social.</p>
+
+        <h3 style="margin-top: 40px; color: var(--accent-color);">Contáctanos</h3>
+        <p>¿Tienes alguna idea para mejorar el colegio? Escríbeme.</p>
+        
+        <form id="form-ecovilla" action="https://formspree.io/f/xwvjpnld" method="POST">
+            <input type="text" name="nombre" placeholder="Tu Nombre" required>
+            <input type="email" name="email" placeholder="Tu Correo Estudiantil" required>
+            <textarea name="mensaje" rows="5" placeholder="¿Cómo podemos hacer el colegio más sustentable?" required></textarea>
+            <button type="submit" class="btn">Enviar Propuesta</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
