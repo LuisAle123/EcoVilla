@@ -66,7 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         el.addEventListener('click', () => {
-            clickSound.currentTime = 0;
             clickSound.play().catch(() => {});
         });
     });
